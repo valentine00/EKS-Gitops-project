@@ -71,10 +71,10 @@ Key components include:
 - Application configuration
 - ArgoCD deployment configuration
 
-Github actions is used to automate the application delivery process.  
-ArgoCD is used to implement GitOps-based deployment to Amazon EKS.  
+Github actions is used to automate the CI/CD process.  
+ArgoCD is used to implement GitOps-based deployment to Amazon EKS. ArgoCD continuously monitors the desired configuration and synchronizes the Kubernetes cluster with the state defined in Git.
 The application runs on Amazon EKS using Kubernetes resources managed through Helm.  
-For monitoring and observability, I use Prometheus and Grafana. Data is scraped with promethus and Grafana allows for Visualization of the data. Alerting is also implemeted. JMX exporter is used to enable prometheus scrape the core application data.
+For monitoring and observability, I use Prometheus and Grafana. Data is scraped with promethus and Grafana allows for Visualization of the data. Alerting and slack notification are also implemeted. JMX exporter is used to enable prometheus scrape the core application data.
 
 ## Screenshots 
 The screenshots below demonstrate the working platform.  
@@ -112,6 +112,16 @@ The screenshots below demonstrate the working platform.
 <img width="1912" height="952" alt="monitoringDashboard" src="https://github.com/user-attachments/assets/176527bf-58b9-47c3-998a-00426fb87bcd" />
 
 ### Alerting
+
+<img width="1407" height="865" alt="slack_notification" src="https://github.com/user-attachments/assets/f8dd69a2-aa02-4ef8-99c9-a963ca22a4d4" />  
+<img width="666" height="617" alt="jvm alert" src="https://github.com/user-attachments/assets/c75d9942-1d6d-42f1-8118-e137340bb17a" />  
+
+## Repository links
+The complete implementation is divided into three repositories:
+- Application: https://github.com/valentine00/vprofile-app
+- Infrastructure: https://github.com/valentine00/vprofile-infra
+- Helm / GitOps: https://github.com/valentine00/vprofile-helm
+
 
 
 
