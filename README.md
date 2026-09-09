@@ -74,7 +74,8 @@ Key components include:
 Github actions is used to automate the CI/CD process.  
 ArgoCD is used to implement GitOps-based deployment to Amazon EKS. ArgoCD continuously monitors the desired configuration and synchronizes the Kubernetes cluster with the state defined in Git.
 The application runs on Amazon EKS using Kubernetes resources managed through Helm.  
-For monitoring and observability, I use Prometheus and Grafana. Data is scraped with promethus and Grafana allows for Visualization of the data. Alerting and slack notification are also implemeted. JMX exporter is used to enable prometheus scrape the core application data.
+For monitoring and observability, I use Prometheus and Grafana. Data is scraped with promethus and Grafana allows for Visualization of the data. Alerting and slack notification are also implemeted. JMX exporter is used to enable prometheus scrape the core application data.  
+Repository links can be found at the bottom.
 
 ## Screenshots 
 The screenshots below demonstrate the working platform.  
